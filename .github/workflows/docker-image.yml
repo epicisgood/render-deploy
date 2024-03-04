@@ -11,8 +11,8 @@ jobs:
         uses: actions/checkout@v3
       - name: build
         run: |
-          docker build . -t bando12/bando12:latest
+          docker build . -t storm69/storm69:latest
       - name: publish
         run: |
-          docker login -u bando12 -p ${{ secrets.DOCKERHUB_TOKEN}}
-          docker push bando12/bando12:latest
+          docker login -u storm69 -p ${{ secrets.DOCKERHUB_TOKEN}}
+          docker push storm69/storm69:latest
