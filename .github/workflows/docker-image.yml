@@ -11,8 +11,8 @@ jobs:
         uses: actions/checkout@v4
       - name: build
         run: |
-          docker build . -t sasuke12/sasuke12:latest
+          docker build . -t sasuke838/sasuke838:latest
       - name: publish
         run: |
-          docker login -u sasuke12 -p ${{ secrets.DOCKERHUB_TOKEN}}
-          docker push sasuke12/sasuke12:latest
+          docker login -u sasuke838 -p ${{ secrets.DOCKERHUB_TOKEN}}
+          docker push sasuke838/sasuke838:latest
